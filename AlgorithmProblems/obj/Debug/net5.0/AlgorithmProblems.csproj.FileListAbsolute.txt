@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.exe
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.deps.json
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.runtimeconfig.json
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.runtimeconfig.dev.json
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.dll
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\ref\AlgorithmProblems.dll
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\bin\Debug\net5.0\AlgorithmProblems.pdb
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.AssemblyInfo.cs
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.dll
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\ref\AlgorithmProblems.dll
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.pdb
+C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\obj\Debug\net5.0\AlgorithmProblems.genruntimeconfig.cache
