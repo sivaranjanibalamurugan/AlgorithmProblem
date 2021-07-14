@@ -1,19 +1,23 @@
 ﻿using System;
+using System.IO;
 
-namespace AlgorithmProblems
-{
+
+ namespace AlgorithmProblems
+ {
     class Program
     {
-        private static object arr;
-        private static string element;
-
         static void Main(string[] args)
+
         {
+            string filepath = @"C:\Users\user\source\repos\AlgorithmProblems\AlgorithmProblems\textArray.txt";
+            string text = File.ReadAllText(filepath);
+            string[] textArray = text.Split(" ");
             Console.WriteLine("welcome to Algorithm problems");
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1) Permutation combination of Word");
             Console.WriteLine("2) BinarySearchTree");
-            Console.WriteLine("3) Exit");
+            Console.WriteLine("3) Insertion Sort");
+            Console.WriteLine("4) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -46,14 +50,21 @@ namespace AlgorithmProblems
                     }
                    
                     break;
-
                 case "3":
+                    InsertionSort insertionSort = new InsertionSort();
+                    insertionSort.Sort(textArray);
+                    insertionSort.Display(textArray);
+                    break;
 
+                case "4":
+                    break;
+
+                default:
                     Console.WriteLine("enter the right option");
                     break;
                    
-
+                     
             }
-        }
+     }
     }
-}
+ }
