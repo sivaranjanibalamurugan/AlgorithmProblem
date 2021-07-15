@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProblems
 {
-     class InsertionSort
+   class InsertionSort
    {
       public void Sort(string[] array)
       {

@@ -17,7 +17,8 @@ using System.IO;
             Console.WriteLine("1) Permutation combination of Word");
             Console.WriteLine("2) BinarySearchTree");
             Console.WriteLine("3) Insertion Sort");
-            Console.WriteLine("4) Exit");
+            Console.WriteLine("4) Bubble Sort");
+            Console.WriteLine("5) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -57,6 +58,11 @@ using System.IO;
                     break;
 
                 case "4":
+                    int[] intarray = { 9, 5, 2, 4, 1, 6  };
+                    Bubble bubble = new Bubble();
+                    intarray = bubble.Sort(intarray);
+                    bubble.Display(intarray);
+                
                     break;
 
                 default:
@@ -65,6 +71,6 @@ using System.IO;
                    
                      
             }
-     }
+        }
     }
  }
