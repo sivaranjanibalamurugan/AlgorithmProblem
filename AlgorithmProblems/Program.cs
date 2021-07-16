@@ -18,7 +18,8 @@ using System.IO;
             Console.WriteLine("2) BinarySearchTree");
             Console.WriteLine("3) Insertion Sort");
             Console.WriteLine("4) Bubble Sort");
-            Console.WriteLine("5) Exit");
+            Console.WriteLine("5) Merge Sort");
+            Console.WriteLine("6) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -62,7 +63,17 @@ using System.IO;
                     Bubble bubble = new Bubble();
                     intarray = bubble.Sort(intarray);
                     bubble.Display(intarray);
-                
+                    break;
+
+                case "5":
+                    int start = 0;
+                    int end = textArray.Length;
+                    MergeSort mergeSort = new MergeSort();
+                    mergeSort.mergeSort(textArray, start, end - 1);
+                    mergeSort.Display(textArray);
+                    break;
+
+                case "6":
                     break;
 
                 default:
