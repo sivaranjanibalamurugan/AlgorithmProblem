@@ -20,7 +20,8 @@ using System.IO;
             Console.WriteLine("4) Bubble Sort");
             Console.WriteLine("5) Merge Sort");
             Console.WriteLine("6) Anagram");
-            Console.WriteLine("6) Exit");
+            Console.WriteLine("7) Primenum");
+            Console.WriteLine("8) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -80,18 +81,23 @@ using System.IO;
                     string str1 = Console.ReadLine();
                     string str2 = Console.ReadLine();
 
-                    int result = anagram.CheckAnagram(str1.ToLower(), str2.ToLower());
+                    int result = anagram.CheckAnagram(str1.ToUpper(), str2.ToUpper());
                     if (result == 1)
                     {
-                        Console.WriteLine("Two strings are anagram");
+                        Console.WriteLine("Two strings are in anagram");
                     }
                     else
                     {
-                        Console.WriteLine("the strings are not anagram");
+                        Console.WriteLine("The strings are not anagram");
                     }
                     break;
 
                 case "7":
+                    PrimeNum primeNum = new PrimeNum();
+                    primeNum.PrintPrime();
+                    break;
+
+                case "8":
                     break;
 
                 default:
