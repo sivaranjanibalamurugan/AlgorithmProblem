@@ -21,8 +21,9 @@ using System.IO;
             Console.WriteLine("5) Merge Sort");
             Console.WriteLine("6) Anagram");
             Console.WriteLine("7) Primenum");
-            Console.WriteLine("8) Prime and palindrome");
-            Console.WriteLine("9) Exit");
+            Console.WriteLine("8) Prime and palindrome");        
+            Console.WriteLine("9.Magic Number");
+            Console.WriteLine("10) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -100,6 +101,12 @@ using System.IO;
                     break;
 
                 case "9":
+                    Console.WriteLine("choose a number between 1-100");
+                    Magicnumber magic = new Magicnumber();
+                    magic.ThinkNumber();
+                    break;
+
+                case "10":
                     break;
 
                 default:
