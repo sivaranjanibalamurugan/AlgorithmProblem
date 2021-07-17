@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProblems
 {
-    class MergeSort
-    {
+    class MergeSort<T> where T : IComparable
+	{
 		public void merge(string[] Arr, int start, int mid, int end)
 		{
 
@@ -70,8 +70,11 @@ namespace AlgorithmProblems
 			if (start < end)
 			{
 				int mid = (start + end) / 2;
+				//split the array into left and right sub array
+				//until subarray with element 1 or 0
 				mergeSort(Arr, start, mid);
 				mergeSort(Arr, mid + 1, end);
+				//merge the array
 				merge(Arr, start, mid, end);
 			}
 

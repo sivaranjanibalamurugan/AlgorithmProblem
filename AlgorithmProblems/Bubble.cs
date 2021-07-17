@@ -6,32 +6,30 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProblems
 {
-	class Bubble
-	{
-		public int[] Sort(int[]array) 
-		{
-			
-			for (int i = 0; i < array.Length; i++)
-			{
-
-				for (int j = i+1; j <array.Length; j++)
-				{
-
-					if (array[i].CompareTo(array[j]) > 0)
-					{
-						// swap temp and arr[i]
-						int temp = array[i];
-						array[i] = array[j];
-						array[j] = temp;
-					}
-				}
-			}
-			return array;
-			
-		}
-
+	class Bubble<T> where T : IComparable
+    {
+        //bubble sort compare the current element with next element 
+        public T[] Sort(T[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                T temp;
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    //if the next element is less than current element then swap
+                    if (array[i].CompareTo(array[j]) > 0)
+                    {
+                        temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+            return array;
+        }
+		
 		/* Prints the array */
-		public  void Display(int[] array)
+		public  void Display(T[] array)
 		{
 			
 			for (int i = 0; i < array.Length; ++i)

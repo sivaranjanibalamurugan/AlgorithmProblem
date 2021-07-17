@@ -33,36 +33,30 @@ using System.IO;
                     break;
 
                 case "2":
-                    Console.WriteLine("enter size of array:");
-                    int size = Convert.ToInt32(Console.ReadLine());
-                    string[] array = new string[size];
-                    Console.WriteLine("enter elements of array:");
-                    for (int i =0; i<size; i++)
+                    BinarySearch<string> binarySearch = new BinarySearch<string>(textArray);
+                    Console.WriteLine("Enter the word to search:");
+                    string word = Console.ReadLine();
+                    int found = binarySearch.FindWord(word, 0, textArray.Length);
+                    if (found == 1)
                     {
-                        array[i] = Console.ReadLine();
-                    }
-                    Console.WriteLine("enter elements  to find ");
-                    string searchElement = Console.ReadLine();
-                    int index = BinarySearch.BinarySearchWord(array, searchElement);
-                    if(index == 1)
-                    {
-                        Console.WriteLine("Element is not present");
+                        Console.WriteLine("{0} is found", word);
                     }
                     else
                     {
-                        Console.WriteLine("Element is  present ");
+                        Console.WriteLine("{0} is not found", word);
                     }
-                   
+                    break;
+
                     break;
                 case "3":
-                    InsertionSort insertionSort = new InsertionSort();
+                    InsertionSort<string> insertionSort = new InsertionSort<string>();
                     insertionSort.Sort(textArray);
                     insertionSort.Display(textArray);
                     break;
 
                 case "4":
                     int[] intarray = { 9, 5, 2, 4, 1, 6  };
-                    Bubble bubble = new Bubble();
+                    Bubble<int> bubble = new Bubble<int>();
                     intarray = bubble.Sort(intarray);
                     bubble.Display(intarray);
                     break;
@@ -70,7 +64,7 @@ using System.IO;
                 case "5":
                     int start = 0;
                     int end = textArray.Length;
-                    MergeSort mergeSort = new MergeSort();
+                    MergeSort<string> mergeSort = new MergeSort<string>();
                     mergeSort.mergeSort(textArray, start, end - 1);
                     mergeSort.Display(textArray);
                     break;

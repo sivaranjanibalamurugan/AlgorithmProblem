@@ -6,25 +6,29 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProblems
 {
-   class InsertionSort
-   {
-      public void Sort(string[] array)
-      {
-            string maxValue;
+   class InsertionSort<T> where T : IComparable
+    {
+        public void Sort(T[] array)
+        {
+            T maxValue;
             for (int i = 1; i < array.Length; i++)
             {
-                //make 1st element as maxValue
-                maxValue  = array[i];
+                //make first element as maximum value
+                maxValue = array[i];
                 int j = i - 1;
-                //checking for the minimum and move to sorted and unsorted array
+                //split the array into sorted and unsorted array 
+                //check for minimum and move into sorted array
                 while (j >= 0 && array[j].CompareTo(maxValue) > 0)
                 {
                     array[j + 1] = array[j];
                     j--;
                 }
+                //make the mimum value into sorted array
                 array[j + 1] = maxValue;
             }
-      }
+        }
+   
+        // Displaying method
         public void Display(string[] array)
         {
             for (int i =0; i< array.Length; i++)
