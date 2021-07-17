@@ -21,7 +21,8 @@ using System.IO;
             Console.WriteLine("5) Merge Sort");
             Console.WriteLine("6) Anagram");
             Console.WriteLine("7) Primenum");
-            Console.WriteLine("8) Exit");
+            Console.WriteLine("8) Prime and palindrome");
+            Console.WriteLine("9) Exit");
             Console.WriteLine("\r\nSelect  an option:");
             switch(Console.ReadLine())
             {
@@ -92,6 +93,13 @@ using System.IO;
                     break;
 
                 case "8":
+                    PrimeNum primeNum1 = new PrimeNum();
+                    primeNum1.PrintPrime();
+                    primeNum1.PrintPalindrome();
+                    primeNum1.CheckAnagram();
+                    break;
+
+                case "9":
                     break;
 
                 default:
